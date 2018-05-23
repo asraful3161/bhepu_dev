@@ -1,0 +1,40 @@
+html, body {
+	overflow-x: hidden;
+}
+
+.ovh {
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+.img-thumbnail {
+	height: 250px;
+	border-width: 4px;
+}
+
+.jumbotron h5 {
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 100%;
+}
+
+.footer {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	margin-top: 50px;
+}
+
+.footer p.ss {
+	font-style: italic;
+	margin-top: 20px;
+	color: #e06b6b;
+}
