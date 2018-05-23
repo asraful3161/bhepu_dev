@@ -348,17 +348,6 @@ foreach ($result as $row) {
 									<td><?php echo $model_name; ?></td>
 								</tr>
 								<tr>
-									<td><span>Division</span></td>
-									<td><?php echo $division_name; ?></td>
-								</tr>
-								<tr>
-									<td><span>District</span></td>
-									<td><?php echo $district_name; ?></td>
-								</tr>
-
-
-
-								<tr>
 									<td><span>Body Type</span></td>
 									<td><?php echo $body_type_name; ?></td>
 								</tr>
@@ -493,6 +482,14 @@ foreach ($result as $row) {
 											Not Specified
 										<?php endif; ?>
 									</td>
+								</tr>
+								<tr>
+									<td><span>Division</span></td>
+									<td><?php echo $division_name; ?></td>
+								</tr>
+								<tr>
+									<td><span>District</span></td>
+									<td><?php echo $district_name; ?></td>
 								</tr>
 							</tbody>
 						</table>

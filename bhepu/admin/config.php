@@ -9,18 +9,18 @@ date_default_timezone_set('Asia/Dhaka');
 $dbhost = 'localhost';
 
 // Database Name
-$dbname = 'bhepu_dev';
+$dbname = 'new_carlisting';
 
 // Database Username
 $dbuser = 'root';
 
 // Database Password
-$dbpass = '12345678';
+$dbpass = '';
 
-$dbport = 3307;
+$dbport = 3306;
 
 // Defining base url
-define("BASE_URL", "http://localhost/bhepu/");
+define("BASE_URL", "http://localhost/bhepu_dev/bhepu/");
 
 // Getting Admin url
 define("ADMIN_URL", BASE_URL . "admin" . "/");
@@ -28,6 +28,7 @@ define("ADMIN_URL", BASE_URL . "admin" . "/");
 try {
 	$pdo = new PDO("mysql:host={$dbhost};port={$dbport};dbname={$dbname}", $dbuser, $dbpass);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$pdo->exec("set names utf8");
 }
 catch( PDOException $exception ) {
 	echo "Connection error :" . $exception->getMessage();
