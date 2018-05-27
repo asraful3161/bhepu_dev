@@ -240,10 +240,10 @@ foreach ($result as $row) {
 							<div class="featured-price">
 								<h2>
 									<?php if($row['regular_price']!=$row['sale_price']): ?>
-										<del><?php echo $row['regular_price']; ?>Taka</del>
-										<?php echo $row['sale_price']; ?>Taka
+										<del><?php echo $row['regular_price']; ?></del>
+										<?php echo $row['sale_price']; ?> Taka
 									<?php else: ?>
-										<?php echo $row['sale_price']; ?>Taka
+										<?php echo $row['sale_price']; ?> Taka
 									<?php endif; ?>
 								</h2>
 							</div>
@@ -327,10 +327,10 @@ foreach ($result as $row) {
 							<div class="featured-price">
 								<h2>
 									<?php if($row['regular_price']!=$row['sale_price']): ?>
-										<del><?php echo $row['regular_price']; ?>Taka</del>
-										<?php echo $row['sale_price']; ?>Taka
+										<del><?php echo $row['regular_price']; ?></del>
+										<?php echo $row['sale_price']; ?> Taka
 									<?php else: ?>
-										<?php echo $row['sale_price']; ?>Taka
+										<?php echo $row['sale_price']; ?> Taka
 									<?php endif; ?>
 								</h2>
 							</div>

@@ -46,15 +46,15 @@ if(isset($_POST['form1'])) {
 		$valid = 0;
 		$error_message .= 'You must have to select car condition.\n';
 	}
-	if(empty($_POST['regular_price'])) {
-		$valid = 0;
-		$error_message .= 'Regular Price can not be empty.\n';
-	} else {
-		if(!is_numeric($_POST['regular_price'])) {
-			$valid = 0;
-			$error_message .= 'Regular Price must be numeric.\n';
-		}
-	}
+	// if(empty($_POST['regular_price'])) {
+	// 	$valid = 0;
+	// 	$error_message .= 'Regular Price can not be empty.\n';
+	// } else {
+	// 	if(!is_numeric($_POST['regular_price'])) {
+	// 		$valid = 0;
+	// 		$error_message .= 'Regular Price must be numeric.\n';
+	// 	}
+	// }
 	if(empty($_POST['sale_price'])) {
 		$valid = 0;
 		$error_message .= 'Sale Price can not be empty.\n';
@@ -550,13 +550,13 @@ if(isset($_POST['form1'])) {
 								 	<div class="clear"></div>
 								 	
 								 	<div class="form-group col-md-6 col-sm-6">
-										<label for="">Regular Price *</label>
-										<input autocomplete="off" type="text" class="form-control" name="regular_price" placeholder="Regular Price in USD" value="<?php if(isset($_POST['regular_price'])) {echo $_POST['regular_price'];} ?>">
+										<label for="">Regular Price</label>
+										<input autocomplete="off" type="text" class="form-control" name="regular_price" placeholder="Regular Price in Taka" value="<?php if(isset($_POST['regular_price'])) {echo $_POST['regular_price'];} ?>">
 									</div>
 
 									<div class="form-group col-md-6 col-sm-6">
 										<label for="">Sale Price *</label>
-										<input autocomplete="off" type="text" class="form-control" name="sale_price" placeholder="Sale Price in USD" value="<?php if(isset($_POST['sale_price'])) {echo $_POST['sale_price'];} ?>">
+										<input autocomplete="off" type="text" class="form-control" name="sale_price" placeholder="Sale Price in Taka" value="<?php if(isset($_POST['sale_price'])) {echo $_POST['sale_price'];} ?>">
 									</div>
 									
 									<div class="form-group col-md-12">

@@ -202,9 +202,9 @@ foreach ($result as $row) {
 						<div class="car-detail-price">
 							<p>
 								<?php if($regular_price == $sale_price): ?>
-									<?php echo $sale_price; ?>Taka
+									<?php echo $sale_price; ?> Taka
 								<?php else: ?>
-									<del><?php echo $regular_price; ?>Taka</del> <?php echo $sale_price; ?>Taka 
+									<del><?php echo $regular_price; ?></del> <?php echo $sale_price; ?> Taka 
 								<?php endif; ?>								
 							</p>
 						</div>

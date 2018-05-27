@@ -268,11 +268,11 @@ if( $_SERVER['REQUEST_METHOD'] !== 'POST' && $_SERVER['REQUEST_METHOD'] !== 'GET
 							<div class="col-md-4 col-sm-4 col-xs-6 listing-price">
 								<h2>
 									<?php if($row['regular_price']!=$row['sale_price']): ?>
-										<del><?php echo $row['regular_price']; ?>Taka</del>
-										<?php echo $row['sale_price']; ?>Taka
+										<del><?php echo $row['regular_price']; ?></del>
+										<?php echo $row['sale_price']; ?> Taka
 									<?php else: ?>
-										<?php echo $row['sale_price']; ?>
-									Taka<?php endif; ?>
+										<?php echo $row['sale_price']; ?> 
+									 Taka<?php endif; ?>
 								</h2>
 								<a href="<?php echo BASE_URL.URL_CAR.$row['car_id']; ?>">View Detail</a>
 							</div>								
